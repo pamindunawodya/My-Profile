@@ -133,7 +133,7 @@ background-size: cover;
 
 @media (max-width:500px) {
   .container .heading{
-    color: red;
+    color: rgb(85, 255, 0);
    
    }
 
