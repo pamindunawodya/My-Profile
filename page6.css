@@ -1,0 +1,177 @@
+.pg6{
+    width: 100%;
+    height:900px;
+    background: url(assests/Background/galarmBck.png);
+  
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.pg6ImgBoxes{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(5,1fr);
+    /* background-color: red; */
+    width: 1300px;
+
+    height: 250px;
+ 
+}
+.pg6ImgBoxes>div:first-child{
+
+   background: url("assests/Background/gaming-room-no-people-equiped-with-rgb-powerful-personal-computer-online-videogames-tournament-gaming-chair-first-person-shooter-game-screen-cozy-room-with-neon-light.jpg");
+   background-size: cover;
+   opacity: 0.8;
+  
+   
+}
+.pg6ImgBoxes>div:nth-child(2){
+    background: url("assests/Background/wallpaperflare.com_wallpaper\ \(3\).jpg");
+    background-size: cover;
+  
+   
+}
+.pg6ImgBoxes>div:nth-child(3){
+    background: url("assests/Background/pg6Galarm.png");
+    background-size: cover;
+    opacity: 0.8;
+    
+}
+.pg6ImgBoxes>div:nth-child(4){
+   background: url("assests/Background/vivaImg.png");
+   background-size: cover;
+   opacity: 0.8;
+}
+.pg6ImgBoxes>div:nth-child(5){
+    background: url("assests/Background/watterfallMy.png");
+    background-size: cover;
+    opacity: 0.8;
+}
+.Slider {
+ 
+
+  /* background: url("assests/Background/gymImg.png"); */
+ 
+    margin-left: 1250px;
+
+    margin-top: -250px;
+    overflow: hidden;
+    opacity: 0.8;
+  }
+.angle{
+   width: 50%;
+   height: 700px;
+   margin-top: -530px;
+   margin-left: 940px;
+    clip-path: polygon(25% 25%, 36.75% 25%, 36.75% 25%, 36.75% 76.88%, 75% 76.88%, 75% 83.25%, 65% 89.75%, 25% 89.75%);
+background-color: #ed1a1a;
+opacity: 0.6;
+}
+.pg6Title{
+    position: absolute;
+    font-size: 70px;
+    color: rgb(240, 239, 236);
+    margin-top: -560px;
+    opacity: 0.8;
+    width: 100%;
+    text-align: center;
+}
+.pg6paraWrapper{
+    width: 70%;
+    height: 500px;
+    /* background-color: #ed1a1a; */
+    margin-top:-400px;
+    padding-left: 20px;
+}
+.pg6paraWrapper{
+    color: aliceblue;
+    font-size: 29px;
+    opacity: 0.5;
+}
+.redTitle{
+    color: #ed1a1a;
+    opacity: 0.8;
+}
+
+@media(min-width:1550px) {
+    .angle{
+        display: none;
+    }
+    .pg6ImgBoxes{ 
+        width: 100%;
+    }
+    .Slider {
+        display: none;
+    }
+    .pg6paraWrapper{
+        width: 100%;
+        text-align: center;
+        font-size: 2vw;
+        text-align: center;
+        margin-top: 80px;
+         
+      }
+      .pg6Title{
+        margin-top: 2px;
+    }
+}
+
+    
+
+
+@media (max-width:992px) {
+    .pg6ImgBoxes{ 
+        width: 100vw;
+    }
+}
+
+
+@media (max-width:800px) {
+    
+    .pg6ImgBoxes{
+        display: none;
+    }
+   
+}
+
+
+
+@media (max-width:1400px) {
+    
+
+
+    .Slider {
+ 
+
+        /* background: url("assests/Background/gymImg.png"); */
+       
+          display: none;
+        }
+
+        .pg6paraWrapper{
+            width: 100%;
+            margin-top:140px;
+            font-size: 28px;
+           
+        }
+        .angle{
+            display: none;
+        }
+        .pg6Title{
+            margin-top: 28px;
+        }
+}
+
+@media (max-width:500px) {
+    .pg6Title{
+       font-size: 50px;
+    }
+
+    .pg6paraWrapper{
+      width: 90%;
+      text-align: center;
+      font-size: 22px;
+       
+    }
+}

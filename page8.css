@@ -1,0 +1,271 @@
+ .pg8 {
+  width: 100%;
+  background: url("assests/Background/bck3.jpg");
+   height: fit-content; 
+   background-size: cover;
+}
+
+
+/* #opacityblck {
+   width: 100%;
+  height: 900px;
+  background-color: rgb(26, 25, 25);
+  opacity: 0.1; 
+}
+
+#aboutme {
+  position: absolute;
+  width: 614.4px;
+  height: 178.5px;
+  background-color: #FF9400;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 100% 100%, 0% 100%);
+  margin-top: 50px;
+  opacity: 0.95;
+  margin-left: 30px;
+}
+
+.waviy {
+  position: relative;
+  font-size: 100px;
+  margin-top: 35px;
+  font-family: 'Outfit', sans-serif;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 63px;
+}
+
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes waviy {
+  0%, 40%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
+.txtName {
+  width: 250px;
+  height: 50px;
+  margin-top: 300px;
+  margin-left: 30px;
+}
+
+.txtemail {
+  display: block;
+  width: 531px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.txtMsg {
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 100px;
+  width: 530px;
+}
+
+.btnSend {
+ position: absolute;
+  width: 150px;
+  height: 38px;
+  margin-top: 140px;
+  margin-left: -530px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btnSend:hover{
+  background-color: #1d9cd2;
+}
+
+.myDetailsContainer {
+  width: 42.32vw;
+  height: fit-content;
+  background-color: black;
+  margin-top: -580px;
+  margin-left: 850px;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+.informationTitle {
+  margin-left: 175px;
+  font-size: 50px;
+  color: orange;
+}
+
+.pg8EmailImg {
+  color: #fff;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.addresstxt {
+  position: absolute;
+  color: #f6f6f5;
+  margin-top: 10px;
+  font-size: 40px;
+  margin-left: 30px;
+}
+
+.pg8email {
+  width: 150px;
+  margin-top: 50px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.pg8txtemail {
+  position: absolute;
+  color: #fff;
+  font-size: 38px;
+  margin-top: 110px;
+}
+
+.pg8callImg {
+  width: 150px;
+  margin-left: 30px;
+}
+
+.txtContact {
+  position: absolute;
+  color: #f6f6f5;
+  font-size: 38px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.socialmediaIcon {
+  display: inline;
+  margin-left: 130px;
+}
+
+.socialmediaIcon > img {
+  width: 70px;
+  cursor: pointer;
+}
+
+.fllowme {
+  color: #FF9400;
+  font-size: 30px;
+} */
+
+.outer {
+  /*background-color: red;*/
+  width: 100vw;
+  height: fit-content;
+}
+
+.top {
+  /*background-color: black;*/
+  background-color: rgba(0, 0, 0, 0.5);
+  width: calc(100% - 20px);
+  height: 50px;
+  color: white;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.headAndFootWrapper {
+  /*background-color: blue;*/
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+
+.head {
+
+  /*background-color: blueviolet;*/
+  height: 100%;
+  width: 50%;
+}
+
+.foot {
+  background-color: rgba(0,0,0,0.9);
+  height: 100%;
+  width: calc(50% - 20px);
+}
+
+
+.head{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.in{
+  /*background-color: red;*/
+  width: 80%;
+  height: 40px;
+  margin-top: 20px;
+}
+
+
+.in input{
+  height: 100%;
+  width: 100%;
+}
+
+.inbtn{
+  /*background-color: red;*/
+  width: 80%;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.inbtn input{
+  width: 100px;
+  height: 30px;
+}
+
+.details_box{
+  height: 60px;
+  /*background-color: #FF9400;*/
+  margin-top: 20px;
+}
+
+.details_box{
+  line-height: 60px;
+  padding-left: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+
+
+@media (max-width:600px) {
+
+  .headAndFootWrapper{
+    flex-direction: column;
+  }
+  
+  .head {
+      width: 100%;
+  }
+
+  .foot {
+      width: 100%;
+  }
+
+  .details_box{
+    padding-left: 20px;
+    font-size:17.2px;
+}
+.waviy {
+  font-size: 40px;
+}
+}

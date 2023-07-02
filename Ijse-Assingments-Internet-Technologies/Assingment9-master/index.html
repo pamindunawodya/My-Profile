@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex|layout</title>
+
+    <style>
+
+        section{
+            height: 400px;
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            gap: 2px;
+            top:0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin:auto;
+            justify-content: center;
+
+            /* justify-content:flex-end;  */
+
+
+        }
+
+        section>.light{
+            border: 2px solid red;
+            height: 50px;
+            width: 200px;
+
+        }
+
+
+        .btn{
+      transform: translateX(300px);
+
+        }
+
+        .start{
+            background-color: blue;
+            height: 50px;
+            width: 200px;
+
+        }
+        .stop{
+            background-color: red;
+            height: 50px;
+            width: 200px;
+        }
+        span{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+<section id="light-pannel">
+    <div class="light">a</div>
+    <div class="light">b</div>
+    <div class="light">C</div>
+    <div class="light">D</div>
+    <div class="light">E</div>
+</section>
+<div class="btn">
+    <button class="start"><span>start</span></button>
+    <button class="stop"><span>stop</span></button>
+</div>
+<audio src="assests/Knight Rider Sms ! Knight Rider ! Theme.mp3" id="audio"></audio>
+
+
+<script src="js/jquery-3.6.4.min.js"></script>
+<script>
+
+
+    var LightNumber=0;
+    var lights=$('.light');
+    console.log(lights);
+   // lights[3].style.background='red';
+
+    function updateLigths(){
+        $('.light').css({background:'white'})
+        lights[LightNumber].style.background='red';
+
+        if (LightNumber>0){
+            lights[LightNumber-1].style.background='pink';
+        }
+
+        if (LightNumber<4){
+            lights[LightNumber+1].style.background='pink';
+        }
+        if(LightNumber==4){
+            direction='LEFT'
+        }
+        if(LightNumber==0){
+            direction='RIGHT'
+        }
+        if( direction=='RIGHT'){
+            LightNumber++;
+        }
+        else{
+            LightNumber--;
+        }
+
+    }
+
+    $('.start').on('click',()=>{
+        $('#audio')[0].play();
+        intervalID = setInterval(updateLigths,100);
+    });
+
+    $('.stop').on('click',()=>{
+         $('#audio')[0].pause();
+        clearInterval(intervalID);
+    });
+
+</script>
+</body>
+</html>
